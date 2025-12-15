@@ -1,0 +1,36 @@
+:root {
+    /* Primary Colors - Glossy Purple Theme */
+    --primary: #a855f7;
+    /* Purple 500 */
+    --primary-hover: #9333ea;
+    /* Purple 600 */
+    --primary-glow: rgba(168, 85, 247, 0.5);
+
+    --secondary: #e879f9;
+    /* Fuchsia */
+
+    /* Backgrounds - Dark Black/Purple */
+    --bg-main: #0a0510;
+    /* Very dark purple-black */
+    --bg-glass: rgba(18, 12, 28, 0.65);
+    /* Less transparent, more solid */
+    --bg-glass-hover: rgba(30, 20, 50, 0.75);
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Tajawal', sans-serif;
+
+    --text-main: #ffffff;
+    --text-muted: #ccccd6;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+    --gradient-text: linear-gradient(to right, #c084fc, #e879f9);
+
+    /* UI Elements */
+    --radius-lg: 20px;
+    --border-glass: rgba(255, 255, 255, 0.15);
+
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}

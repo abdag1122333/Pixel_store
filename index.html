@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر بكسل | Pixel Store</title>
+    <meta name="description" content="أقوى سيرفر سرفايفل عربي. انضم الآن للمغامرة!">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Overlay with Noise -->
+    <div class="bg-fixed"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-cube gradient-text"></i>
+                <span class="logo-text">Pixel Store</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#features" data-i18n="nav_features">عن السيرفر</a></li>
+                <li><a href="#store" data-i18n="nav_store">المتجر</a></li>
+                <li><a href="#contact" data-i18n="nav_support">الدعم</a></li>
+            </ul>
+
+            <div class="nav-controls" style="display: flex; gap: 15px; align-items: center;">
+                <button id="lang-toggle" class="btn-outline"
+                    style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-globe"></i> <span id="lang-text" style="font-weight: 700;">EN</span>
+                </button>
+
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <span class="hero-subtitle" data-i18n="hero_subtitle">أقوى سيرفر سرفايفل عربي</span>
+            <h1 class="hero-title"><span data-i18n="hero_title_1">رحلتك تبدأ في</span> <br> <span class="gradient-text"
+                    data-i18n="hero_title_span" style="font-size: 1.2em;">بكسل</span></h1>
+            <p class="hero-description" data-i18n="hero_desc">
+                جهز نفسك لتجربة سرفايفل حقيقية. ابني بيتك، تاجر مع اللاعبين، وسيطر على السوق. السيرفر لسا في بدايته
+                وبنطوره عشانكم.
+            </p>
+            <div class="hero-actions">
+                <a href="https://discord.gg/XG6eUeX38Q" target="_blank" class="btn btn-primary btn-pulse">
+                    <i class="fa-brands fa-discord" style="margin-inline-end: 10px;"></i> <span
+                        data-i18n="btn_discord">تعال الديسكورد</span>
+                </a>
+                <button class="btn btn-outline" disabled style="cursor: not-allowed; opacity: 0.5;">
+                    <i class="fa-solid fa-server" style="margin-inline-end: 10px;"></i> <span data-i18n="btn_ip">الآي
+                        بي: قريباً</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span data-i18n="feat_title_1">ليش تختار</span> <span class="gradient-text"
+                        data-i18n="feat_title_span">بكسل؟</span></h2>
+                <p data-i18n="feat_desc">بداية جديدة وسيرفر نظيف، بنضمن لك تجربة لعب ممتعة وعادلة.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 data-i18n="feat_1_title">تعبك محفوظ</h3>
+                    <p data-i18n="feat_1_desc">مفعلين نظام "Keep Inventory"، يعني لو متت أغراضك معك، وكليمات تحمي بيتك.
+                    </p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 data-i18n="feat_2_title">اقتصاد عادل</h3>
+                    <p data-i18n="feat_2_desc">ما في شي اسمه Pay to Win، الاقتصاد موزون والكل عنده فرصة يصير غني.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon-box"><i class="fa-solid fa-code-commit"></i></div>
+                    <h3 data-i18n="feat_3_title">تطوير مستمر</h3>
+                    <p data-i18n="feat_3_desc">السيرفر تحت الإنشاء وبنسمع لاقتراحاتكم يومياً في الديسكورد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span data-i18n="store_title_1">متجر</span> <span class="gradient-text"
+                        data-i18n="store_title_span">السيرفر</span></h2>
+                <p data-i18n="store_desc" style="font-size: 1.5rem; margin-top: 20px; opacity: 0.7;">المتجر قيد الافتتاح
+                    قريباً..</p>
+            </div>
+
+            <div style="height: 50px;"></div> <!-- Spacer -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Pixel Store</h2>
+                <p data-i18n="footer_rights">برمجة وتطوير: <span style="color: var(--primary);">Abu Obaida
+                        (messi10best)</span> &copy; 2025</p>
+            </div>
+            <div class="social-links">
+                <a href="https://discord.gg/XG6eUeX38Q" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
